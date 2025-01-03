@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/modern-normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/start.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/transformer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/tasks.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/author.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='components/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/button.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/utils.css') }}">
+
+
+    <title>Portfolio Website</title>
+  </head>
+    <header class = "header container">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a class = "header__link" href = #transformer>Підземні трансформатори</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = #ai>Система FlowAI</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = #contact>Контакти</a>
+                </li>
+            </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+  <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+</svg>
+
+            </button>
+        </nav>
+    </header>
+<body>
+    <section id = "start" class = "start container">
+        <h1 class = "start_title">Концепція <strong class="strong_green_class">безпечної</strong> енергосистеми</h1>
+    </section>
+    <div class = "section_back about_back">
+        <section class = "about_container container">
+            <h2 class = "about_header">Про проєкт</h2>
+            <div class="about_div_p">
+                <p class = "about_p">Запропоновані розробки зроблять енергосистему будь-якої країни світу стабільною незважаючи майже на будь-які негативні зовнішні фактори, такі як обстріли, урагани тощо. З жовтня 2022 року росія завдає ракетних ударів по Український інфраструктурі. <br><strong> В результаті атак: </strong></p>
+            </div>
+            <div class="about_stack">
+                <div class = "about_fact">
+                    <h3 class="about_fact_h3">40%</h3>
+                    <p class = "about_fact_p">енергосистеми зруйновано</p>
+                </div>
+                <div class = "about_fact">
+                    <h3 class="about_fact_h3">8.8 млдр $</h3>
+                    <p class = "about_fact_p">нанесено сбитків</p>
+                </div>
+                <div class = "about_fact">
+                    <h3 class="about_fact_h3">49 з 91</h3>
+                    <p class = "about_fact_p">силових трансформаторів зруйновано</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class = "section_back transformer_back">
+        <section id = "transformer" class="transformer container">
+            <h2 class="transformer_head">Підземні трансформатори</h2>
+            <p class="transformer_p">Надійний захист у будь-яких ситуаціях</p>
+            <a href="/static/pics/cv_ua.pdf" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Детальніше
+            </a>
+            <img class = "transformer_pic" src="{{ url_for('static', filename='svg/transformer.svg') }}" alt=""/>
+        </section >
+    </div>
+    <div class = "section_back ai_back">
+    <section id = "ai" class="ai container">
+        <h2 class="ai_head">Стабілізація енергосистеми за допомогою ШІ FlowAI</h2>
+        <p class="ai_p">Швидше. Ефективніше. Стабільніше</p>
+
+                <a href="/static/pics/cv_ua.pdf" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Детальніше
+            </a>
+
+        <img class = "ai_pic" src="{{ url_for('static', filename='svg/AI.svg') }}" alt=""/>
+    </section>
+    </div>
+    <div class = "section_back task_back">
+    <section id = "task" class = "task_container container">
+        <h2 class = "h2_tasks">Цілі проєкту</h2>
+        <div class = "task_stack">
+            <div class = "task_card">
+                <svg class="task_svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+                </svg>
+                <p class = "task_p">Забезпечення стабільності енергопостачання при будь-яких умовах</p>
+            </div>
+            <div class = "task_card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="task_svg">
+                <path d="M6 12a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 1 1 1.5 0v7.5A.75.75 0 0 1 6 12ZM18 12a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 1.5 0v7.5A.75.75 0 0 1 18 12ZM6.75 20.25v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0ZM18.75 18.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 1.5 0ZM12.75 5.25v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0ZM12 21a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 1.5 0v7.5A.75.75 0 0 1 12 21ZM3.75 15a2.25 2.25 0 1 0 4.5 0 2.25 2.25 0 0 0-4.5 0ZM12 11.25a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM15.75 15a2.25 2.25 0 1 0 4.5 0 2.25 2.25 0 0 0-4.5 0Z" />
+                </svg>
+                <p class = "task_p">Підвищення гнучкості енергосистеми за допомогою новітніх методів</p>
+            </div>
+            <div class = "task_card">
+                <svg class="task_svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd" d="M7.29395 11.8039c0-3.96638 2.13959-6.41723 3.53335-8.01378.6733-.7712 1.1725-1.34306 1.1725-1.79012 0 .44706.4993 1.01892 1.1725 1.79013 1.3938 1.59654 3.5334 4.04739 3.5334 8.01377 0 4.3266-2.7501 6.9507-4.0764 7.7654L12.3701 22h-.7071l-.2906-2.4295c-1.3255-.8132-4.07845-3.4378-4.07845-7.7666Zm4.06395 6.7007.6419-9.44578.649 9.44578-.649.7503-.6419-.7503Z" clip-rule="evenodd"/>
+                </svg>
+                <p class = "task_p">Зменьшення впливу на єкологію</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class = "section_back author_back">
+        <section class="author_container container">
+            <h2 class="author_h2">
+                Автор
+            </h2>
+            <img class="author_img" src="static/pics/author.png" alt="">
+            <div class="author_info">
+                <p class="author_name">Тимофій Мешков</p>
+                <h3 class="author_clasification">Енергетик, Винахідник</h3>
+                <a href="/static/pics/cv_ua.pdf" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Резюме
+            </a>
+            </div>
+
+        </section>
+    </div>
+</body>
+<footer>
+    <div class="footer_back">
+        <section id = "contact" class="footer_container container contact">
+            <h2 class="footer_h2">Контакти</h2>
+            <p class="footer_p">email: tymofey.meshkov@gmail.com</p>
+            <p class="footer_p">tel: +380688338834</p>
+        </section>
+    </div>
+</footer>
+</html>

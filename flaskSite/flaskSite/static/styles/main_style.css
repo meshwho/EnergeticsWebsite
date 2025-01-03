@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'e-Ukraine-Regular'; /* Укажите название шрифта */
+    src: url('/static/fonts/e-Ukraine-Regular.woff2') format('woff2'); /* Укажите путь к файлу шрифта */
+    font-weight: normal; /* Опционально: нормальный вес */
+    font-style: normal; /* Опционально: стиль шрифта */
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -.05em;
+    background-color: #5050bf;
+    color: #ffffff;
+    padding: .5em 1em;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px #e11d4880, 0 6px 6px rgba(141, 52, 70, 0.5), 0 0 100px -10px #182b2f;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.transformer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.ai {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+*{
+
+    font-family: 'e-Ukraine-Regular', sans-serif; /* Подключите шрифт к body или конкретному элементу */
+
+    margin: 0;
+    line-height: calc(1em + .5rem);
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}

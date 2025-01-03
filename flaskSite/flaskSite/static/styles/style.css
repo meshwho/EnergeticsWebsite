@@ -1,0 +1,86 @@
+:root {
+    --clr-themeblue:rgba(0, 74, 255, 0.33);
+  --clr-dark: #070a13;
+  --clr-light: #000000;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+--clr-grad: linear-gradient(68.94deg, #C3AAB2 -4.77%, #99EECC 46.72%, #80C0C8 90.23%, #4B8BFA 134.46%);
+--clr-secback: rgba(218, 215, 213, 0.58);
+    --clr-grad2: radial-gradient(92.76% 76.25% at 7.24% 21%, #B5D39D 0%, #F1ACAC 25.66%, #BF98C6 54.47%, #7179EF 86.04%, #2833D0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+
+  /* rose rgb(225, 29, 72) */
+  /* indigo rgb(79, 70, 229) */
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.strong_green_class{
+    color: forestgreen;
+}
+
+.strong_red_class{
+    color: #941919;
+}
+
+@font-face {
+    font-family: 'e-Ukraine-Regular'; /* Укажите название шрифта */
+    src: url('/static/fonts/e-Ukraine-Regular.woff2') format('woff2'); /* Укажите путь к файлу шрифта */
+    font-weight: normal; /* Опционально: нормальный вес */
+    font-style: normal; /* Опционально: стиль шрифта */
+}
+
+*{
+    font-family: 'e-Ukraine-Regular', sans-serif; /* Подключите шрифт к body или конкретному элементу */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.container{
+    margin-top: 5rem;
+}
