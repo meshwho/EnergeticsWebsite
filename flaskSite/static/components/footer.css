@@ -1,0 +1,19 @@
+.footer_back{
+
+    width: 100%;
+    background-color: black;
+    color: black;
+}
+
+.footer_h2,
+.footer_p{
+    color: white;
+}
+
+.footer_h2{
+    padding-top: 1rem;
+}
+
+.footer_container{
+    padding-bottom: 1rem;
+}
