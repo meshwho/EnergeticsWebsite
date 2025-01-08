@@ -4,22 +4,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My Portfolio website" />
+    <meta name="description" content="Secure energetics concept" />
     <meta name="keywords" content="web design, html, css, js" />
 
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/modern-normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/header.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='components/mobilenav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/start.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/transformer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/tasks.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/about.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='components/author.css') }}">
       <link rel="stylesheet" href="{{ url_for('static', filename='components/footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/utils.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/button.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/utils.css') }}">
 
 
-    <title>Portfolio Website</title>
+    <title>Secure energetics concept</title>
   </head>
     <header class = "header container">
         <nav>
@@ -33,6 +35,13 @@
                 <li>
                     <a class = "header__link" href = #contact>Контакти</a>
                 </li>
+                <li class="header__line"></li>
+                <li>
+                    <a class = "header__link" href = '/ua'>ua</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = /en>en</a>
+                </li>
             </ul>
             <button class="header__bars">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -42,6 +51,43 @@
             </button>
         </nav>
     </header>
+  <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
 <body>
     <section id = "start" class = "start container">
         <h1 class = "start_title">Концепція <strong class="strong_green_class">безпечної</strong> енергосистеми</h1>
@@ -68,11 +114,41 @@
             </div>
         </section>
     </div>
+
     <div class = "section_back transformer_back">
         <section id = "transformer" class="transformer container">
             <h2 class="transformer_head">Підземні трансформатори</h2>
             <p class="transformer_p">Надійний захист у будь-яких ситуаціях</p>
-            <a class="transformer_btn btn" href="#">Детальніше</a>
+            <a href="/transformer" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Детальніше
+            </a>
             <img class = "transformer_pic" src="{{ url_for('static', filename='svg/transformer.svg') }}" alt=""/>
         </section >
     </div>
@@ -80,7 +156,38 @@
     <section id = "ai" class="ai container">
         <h2 class="ai_head">Стабілізація енергосистеми за допомогою ШІ FlowAI</h2>
         <p class="ai_p">Швидше. Ефективніше. Стабільніше</p>
-        <a class="ai_btn btn" href="#">Детальніше</a>
+
+                <a href="/ai" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Детальніше
+            </a>
+
         <img class = "ai_pic" src="{{ url_for('static', filename='svg/AI.svg') }}" alt=""/>
     </section>
     </div>
@@ -117,13 +224,42 @@
             <img class="author_img" src="static/pics/author.png" alt="">
             <div class="author_info">
                 <p class="author_name">Тимофій Мешков</p>
-                <h3 class="author_clasification">r4nol@proton.me</h3>
-                <a class="ai_btn btn" href = "static/pics/cv_ua.pdf">Резюме</a>
+                <h3 class="author_clasification">Енергетик, Винахідник</h3>
+                <a href="/static/pics/resume_ua.png" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Резюме
+            </a>
             </div>
 
         </section>
     </div>
-</body>
+
 <footer>
     <div class="footer_back">
         <section id = "contact" class="footer_container container contact">
@@ -133,4 +269,6 @@
         </section>
     </div>
 </footer>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
 </html>

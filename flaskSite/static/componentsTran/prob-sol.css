@@ -1,0 +1,79 @@
+
+.prob-sol_div_img {
+    width: 100%; /* Секция будет занимать всю ширину контейнера */
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем картинку */
+}
+
+.prob-sol_img {
+    padding-top: 2rem;
+    width: 100%; /* Растягиваем картинку на всю ширину секции */
+    height: auto; /* Сохраняем пропорции картинки */
+}
+.prob-sol_div_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.prob-sol_btn{
+    font-size: var(--size-sm);
+}
+.prob-sol_h2{
+    font-size: var(--size-base);
+}
+.prob-sol_h2,
+.prob-sol_p{
+    text-align: center;
+    padding-left: 0.5rem;
+}
+
+@media (min-width: 640px) {
+
+    .prob-sol_h2{
+        font-size: var(--size-lg);
+    }
+    .prob-sol_p{
+        font-size: var(--size-base);
+    }
+    .prob-sol_p,
+    .prob-sol_h2{
+        padding-right: 0.5rem;
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    .prob-sol_img{
+        width: 70%;
+        height: 70%;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .prob-sol_h2{
+        font-size: var(--size-2xl);
+    }
+    .prob-sol_p{
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .prob-sol_h2{
+        font-size: var(--size-4xl);
+    }
+    .prob-sol_p{
+        font-size: var(--size-2xl);
+    }
+}
+
+@media (min-width: 1536px) {
+    .prob-sol_p{
+        font-size: var(--size-3xl);
+    }
+}

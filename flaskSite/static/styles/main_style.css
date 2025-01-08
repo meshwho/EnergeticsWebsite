@@ -51,7 +51,7 @@
     font-family: 'e-Ukraine-Regular', sans-serif; /* Подключите шрифт к body или конкретному элементу */
 
     margin: 0;
-    line-height: calc(1em + .5rem);
+    line-height: calc(1em + .6rem);
 }
 
 section {

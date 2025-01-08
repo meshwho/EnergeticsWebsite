@@ -3,7 +3,12 @@
 }
 
 .about_back {
-    background-color: rgba(0, 74, 255, 0.33);
+    background-color: var(--clr-themeblue);
+}
+
+.about_p,
+.about_header{
+    color: black;
 }
 
 .about_header{

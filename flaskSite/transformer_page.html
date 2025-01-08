@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Underground Transformers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Secure energetics concept" />
+    <meta name="keywords" content="web design, html, css, js" />
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/modern-normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/start.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/importance.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/target.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/solution.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/problem.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/prob-sol.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/pros.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/author.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='components/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/button.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='componentsTran/buttonTransformer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/utils.css') }}">
+
+
+</head>
+<header class = "header container">
+        <nav class="header_nav">
+            <a class="header_back" href = "/ua">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                      <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <ul class="header__menu">
+
+                <li>
+                    <a class = "header__link" href = #start>Підземні трансформатори</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = #ai>Система FlowAI</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = #contact>Контакти</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <a class = "header__link" href = '/transformer'>ua</a>
+                </li>
+                <li>
+                    <a class = "header__link" href = /transformer_en>en</a>
+                </li>
+            </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+<body>
+    <section id = "start" class = "start container">
+        <h1 class="start_title">
+            Підземні трансформатори
+        </h1>
+    </section>
+    <div class = "importance_back">
+        <section class = "importance container">
+            <div class="importance_left_col">
+                <h2 class = "importance_h2">Головні цілі</h2>
+                <p class = "importance_p">російських атак по інфраструктурі це силові трансформатори та об`єкти генерації. За період війни було зруйновано більше половини силових трансформаторів в Україні, що призвело до відключень світла в мільйонів людей</p>
+            </div>
+            <div class="importance_right_col">
+                <img class="importance_img" src="static/pics/burning_transformer.jpg" alt=""/>
+                <img class="importance_img_cut" src="static/pics/transformer_burning_phone.png" alt=""/>
+            </div>
+        </section>
+    </div>
+    <section class = "target container">
+        <p class="target_p"><strong class="strong_green_class">Трансформатори</strong> є ключовими елементами енергосистеми. При руйнації високовольтної підстанції, наприклад 330 kV, ціле місто може залишитись без світла</p>
+        <img class = "target_img" src="static/pics/transformer_network.svg" alt=""/>
+    </section>
+
+    <section class = "solution container">
+        <div class="solution_text">
+            <h2 class="solution_h2"></h2>
+            <p class="solution_p"><strong class="strong_green_class"> Розміщення трансформатора під землею дозволяє захистити трансформатор </strong> від зовнішніх впливів та усунути такі недоліки як шум, електромагнітні хвилі, необхідність покупки земельної ділянки для будівництва підстанції тощо</p>
+        </div>
+        <div class="solution_vid_div">
+            <video class="solution_vid" width="320" height="240" autoplay muted loop="loop">
+                <source src="static/pics/transformer_swap/transformer_swap_main.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <div class="problem_back">
+        <section class = "problem container">
+            <div class="problem_lcol">
+                <h2 class="problem_h2"></h2>
+                <p class="problem_p">Головною проблемою такого розміщення є тепло, що виділяє трансформатор. Через відсутність циркуляції повітря тепло накопичується, що веде до перегріву трансформатора та його виходу з ладу</p>
+            </div>
+            <div class="problem_rcol">
+                <img class="problem_img" src="static/pics/trans_no_vent.png" alt=""/>
+                <p class="problem_img_disc">Температура навколо бункера при роботі трансформатора без вентиляції</p>
+            </div>
+        </section>
+    </div>
+    <section class = "prob-sol container">
+        <p class="prob-sol_p">Для охолодження трансформатора необхідно розрахувати потужність вентиляції, яка буде підтримувати допустиму температуру обмотки трансформатора на рівні 110 °С. Для цього необхідно визначити максимально допустиму температуру навколо трансформатора</p>
+        <div class="prob-sol_div_img">
+            <img class = "prob-sol_img" src="static/pics/surface_ua.svg" alt="Photo"/>
+        </div>
+        <p class="prob-sol_p">Потім на основі отриманих даних та кількості тепла, що виділяє трансформатор, визначається потужність вентиляції, що потрібна для роботи різних трансформаторів під землею без впливу на їх стан та строк служби. Знизу можна побачити приклади температурного режиму трансформатора при розміщенні під землею та його охолодженні за розробленим методом. Розрахунки проводились у серпні, найспекотнішому місяці</p>
+        <div class="prob-sol_div_img">
+            <img class = "prob-sol_img" id="main-photo" src="static/pics/transformer_results/400k_ua_mob.svg" alt="Photo"/>
+        </div>
+        <div class="prob-sol_div_btn">
+            <button class="prob-sol_btn button" onclick="changePhoto('static/pics/transformer_results/400k_ua_mob.svg')">400 000 kVA</button>
+            <button class="prob-sol_btn button" onclick="changePhoto('static/pics/transformer_results/80k_ua_mob.svg')">80 000 kVA</button>
+            <button class="prob-sol_btn button" onclick="changePhoto('static/pics/transformer_results/2500k_ua_mob.svg')">2500 kVA</button>
+
+        </div>
+
+        <script>
+            function changePhoto(photoSrc) {
+                const photoElement = document.getElementById("main-photo");
+                photoElement.src = photoSrc;
+            }
+        </script>
+    </section>
+    <div class="pros_back">
+        <section class = "pros container">
+            <p class="pros_p">Дане рішення дозволяє захистити трансформатори, вразливі елементи енергосистеми, від будь-яких зовнішніх впливів, таких як обстріли, урагани тощо. За такого розміщення та охолодження стан та строк служби трансформатора значно не змінюються</p>
+        </section>
+    </div>
+    <div class = "section_back author_back">
+        <section class="author_container container">
+            <h2 class="author_h2">
+                Автор
+            </h2>
+            <img class="author_img" src="static/pics/author.png" alt="">
+            <div class="author_info">
+                <p class="author_name">Тимофій Мешков</p>
+                <h3 class="author_clasification">Енергетик, Винахідник</h3>
+                <a href="/static/pics/resume_ua.png" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Резюме
+            </a>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <div class="footer_back">
+            <section id = "contact" class="footer_container container contact">
+                <h2 class="footer_h2">Контакти</h2>
+                <p class="footer_p">email: tymofey.meshkov@gmail.com</p>
+                <p class="footer_p">tel: +380688338834</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
